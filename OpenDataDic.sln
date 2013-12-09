@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. OpenDataDic.Biz", "2. OpenDataDic.Biz", "{F6F20560-B0C8-4A0A-8201-F5B9D34B5AD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. OpenDataDic.Dac", "1. OpenDataDic.Dac", "{2055A6B2-5A63-4D64-A9D3-99310FB963B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. OpenDataDic.Web", "3. OpenDataDic.Web", "{6C4059D7-66B9-485C-916E-7FA6A4EA9A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. OpenDataDic.Core", "0. OpenDataDic.Core", "{6331F060-A334-4989-B07A-3041FC4907BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDataDic.Core", "OpenDataDic.Core\OpenDataDic.Core.csproj", "{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDataDic.Dac", "OpenDataDic.Dac\OpenDataDic.Dac.csproj", "{0043A858-7005-4022-AD70-3BFEE3B8C22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDataDic.Biz", "OpenDataDic.Biz\OpenDataDic.Biz.csproj", "{4B88B31F-2D49-44BE-B093-8FE92A919B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDataDic.Web", "OpenDataDic.Web\OpenDataDic.Web.csproj", "{A667622A-3862-47D9-BB5F-5CB9460FD576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0043A858-7005-4022-AD70-3BFEE3B8C22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0043A858-7005-4022-AD70-3BFEE3B8C22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0043A858-7005-4022-AD70-3BFEE3B8C22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0043A858-7005-4022-AD70-3BFEE3B8C22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B88B31F-2D49-44BE-B093-8FE92A919B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B88B31F-2D49-44BE-B093-8FE92A919B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B88B31F-2D49-44BE-B093-8FE92A919B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B88B31F-2D49-44BE-B093-8FE92A919B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A667622A-3862-47D9-BB5F-5CB9460FD576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A667622A-3862-47D9-BB5F-5CB9460FD576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A667622A-3862-47D9-BB5F-5CB9460FD576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A667622A-3862-47D9-BB5F-5CB9460FD576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B88B31F-2D49-44BE-B093-8FE92A919B4B} = {F6F20560-B0C8-4A0A-8201-F5B9D34B5AD5}
+		{0043A858-7005-4022-AD70-3BFEE3B8C22F} = {2055A6B2-5A63-4D64-A9D3-99310FB963B1}
+		{A667622A-3862-47D9-BB5F-5CB9460FD576} = {6C4059D7-66B9-485C-916E-7FA6A4EA9A6C}
+		{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D} = {6331F060-A334-4989-B07A-3041FC4907BF}
+	EndGlobalSection
+EndGlobal
