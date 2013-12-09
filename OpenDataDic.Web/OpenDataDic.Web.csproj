@@ -428,7 +428,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="providers.config" />
-    <Content Include="SqlMap.config" />
+    <Content Include="SqlMap.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="_AXJ\jquery\jquery-1.10.2.min.map" />
     <None Include="_AXJ\ui\default\img\AXPopOverArrow.psd" />
     <None Include="_AXJ\ui\default\img\AXPopOverArrowBottom.psd" />
