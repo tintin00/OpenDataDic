@@ -7,17 +7,17 @@ using System.Data;
 using System.Runtime.Serialization.Json;
 //using System.Web.Script.Serialization;
 
-namespace EntLib.Core.Util
+namespace mkFx.Util
 {
-    public class JsonHelper : IDisposable
+    public static class JsonHelper // : IDisposable
     {
-        public JsonHelper()
-        {
-        }
+        //public JsonHelper()
+        //{
+        //}
 
-        public void Dispose()
-        {
-        }
+        //public void Dispose()
+        //{
+        //}
 
         #region 프로토타입 DataTable to Json
         /// <summary>

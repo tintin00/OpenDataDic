@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0043A858-7005-4022-AD70-3BFEE3B8C22F}</ProjectGuid>
+    <ProjectGuid>{EF62829B-03BB-4B63-BC83-5925D3F4A789}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenDataDic.Dac</RootNamespace>
-    <AssemblyName>OpenDataDic.Dac</AssemblyName>
+    <RootNamespace>mkFx.Caching</RootNamespace>
+    <AssemblyName>mkFx.Caching</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,21 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBatisNet.Common">
-      <HintPath>..\bin\IBatisNet.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.Common.Logging.Log4Net">
-      <HintPath>..\bin\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataAccess">
-      <HintPath>..\bin\IBatisNet.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataMapper">
-      <HintPath>..\bin\IBatisNet.DataMapper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,20 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DacBase.cs" />
-    <Compile Include="DacCommonData_NTx.cs" />
-    <Compile Include="DacCommonData_Tx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\mkFx.Framework\mkFx.Core\mkFx.Core.csproj">
-      <Project>{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}</Project>
-      <Name>mkFx.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\mkFx.Framework\mkFx.Data\mkFx.Data.csproj">
-      <Project>{4220813D-D35F-4F34-A978-0ED8F0AA1B33}</Project>
-      <Name>mkFx.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
