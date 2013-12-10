@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4B88B31F-2D49-44BE-B093-8FE92A919B4B}</ProjectGuid>
+    <ProjectGuid>{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenDataDic.Biz</RootNamespace>
-    <AssemblyName>OpenDataDic.Biz</AssemblyName>
+    <RootNamespace>OpenDataDic.Core</RootNamespace>
+    <AssemblyName>OpenDataDic.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,12 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBatisNet.DataAccess">
-      <HintPath>..\bin\IBatisNet.DataAccess.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,17 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BizBase.cs" />
-    <Compile Include="BizCommonData_NTx.cs" />
-    <Compile Include="BizCommonData_Tx.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OpenDataDic.Dac\OpenDataDic.Dac.csproj">
-      <Project>{0043A858-7005-4022-AD70-3BFEE3B8C22F}</Project>
-      <Name>OpenDataDic.Dac</Name>
-    </ProjectReference>
+    <Compile Include="UserInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,18 +2,20 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0043A858-7005-4022-AD70-3BFEE3B8C22F}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{DC829D20-1AED-4EB3-B962-CE5B56F6B01E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenDataDic.Dac</RootNamespace>
-    <AssemblyName>OpenDataDic.Dac</AssemblyName>
+    <RootNamespace>OpenDataDic.Test</RootNamespace>
+    <AssemblyName>OpenDataDic.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,7 +24,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,21 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IBatisNet.Common">
-      <HintPath>..\bin\IBatisNet.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.Common.Logging.Log4Net">
-      <HintPath>..\bin\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataAccess">
-      <HintPath>..\bin\IBatisNet.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="IBatisNet.DataMapper">
-      <HintPath>..\bin\IBatisNet.DataMapper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,20 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="DacBase.cs" />
-    <Compile Include="DacCommonData_NTx.cs" />
-    <Compile Include="DacCommonData_Tx.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\mkFx.Framework\mkFx.Core\mkFx.Core.csproj">
+    <ProjectReference Include="..\..\0. mkFx.Framework\mkFx.Core\mkFx.Core.csproj">
       <Project>{A9F3DFA6-C7A5-4BB1-AB3E-81B8EA38466D}</Project>
       <Name>mkFx.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\mkFx.Framework\mkFx.Data\mkFx.Data.csproj">
-      <Project>{4220813D-D35F-4F34-A978-0ED8F0AA1B33}</Project>
-      <Name>mkFx.Data</Name>
+    <ProjectReference Include="..\..\0. mkFx.Framework\mkFx.Logging\mkFx.Logging.csproj">
+      <Project>{72C53A12-3F0E-4D67-B66A-4E9CADC365B0}</Project>
+      <Name>mkFx.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1. OnSite.Framework\OnSiteFx.Core\OnSiteFx.Core\OnSiteFx.Core.csproj">
+      <Project>{1466A670-2B7F-4627-9502-1B4F8978D779}</Project>
+      <Name>OnSiteFx.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\1. OnSite.Framework\OnSiteFx.Logging\OnSiteFx.Logging.csproj">
+      <Project>{B5237191-5365-4B00-BE8E-5542325C0474}</Project>
+      <Name>OnSiteFx.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,6 +9,7 @@ using IBatisNet.DataMapper;
 using IBatisNet.DataMapper.MappedStatements;
 using IBatisNet.DataMapper.Scope;
 
+
 namespace OpenDataDic.Dac
 {
     public class DacBase : IDisposable, IDao
